@@ -6,10 +6,10 @@ BUILD_DIR := build_release
 # run: build
 # 	$(BUILD_DIR)/main
 run_server: build
-	$(BUILD_DIR)/echo/async_tcp_echo_server 8192
+	$(BUILD_DIR)/cpp11/echo/async_tcp_echo_server 8192
 
 run_client: build
-	$(BUILD_DIR)/echo/blocking_tcp_echo_client 127.0.0.1 8192 
+	$(BUILD_DIR)/cpp11/echo/blocking_tcp_echo_client 127.0.0.1 8192 
 
 
 build: $(BUILD_DIR)
